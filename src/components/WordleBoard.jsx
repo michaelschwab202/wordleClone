@@ -15,7 +15,7 @@ export default function WordleBoard({word, wordList})
 
     const guessesRef = useRef(numberGuesses);
     const [gameStatus, setGameStatus] = useState(0);
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState("Start typing to guess a word. Hit enter to confirm your guess.");
     useEffect( () => 
     {
         guessesRef.current = numberGuesses
