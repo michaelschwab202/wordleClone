@@ -6,6 +6,7 @@ import './App.css'
 import WordleTextBox from './components/WordleTextBox'
 import WordleBoard from './components/WordleBoard'
 import wordsRaw from './data/wordsFiveLetters.txt?raw'
+import Header from './components/Header'
 
 function App() 
 {
@@ -14,7 +15,11 @@ function App()
   console.log(word);
   return (
     <>
-      <WordleBoard word={word} wordList={words}/>
+      <div className="mainContainer">
+        <Header />
+        
+        <WordleBoard word={word} wordList={words}/>
+      </div>
     </>
   );
 }

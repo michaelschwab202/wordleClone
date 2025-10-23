@@ -48,11 +48,13 @@ export default function WordleBoard({word, wordList})
         
         setBoxes(prev => [...prev, <WordleTextBox key={prev.length} correctWord={correctWord} onGuess={handleGuess} validate={isValidWord}/>]);
     }
-    return( 
+    return(
         <>
         <p className="message">{message}</p>
-        {boxes}
-        
+        <div className='wordleBoard'>
+            
+            {boxes}
+        </div>
         </>
     );
 }
