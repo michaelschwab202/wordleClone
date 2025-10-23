@@ -1,16 +1,24 @@
-# React + Vite
+# Wordle Clone
+This is source code for a React+Vite webpage that imitates the popular [Wordle](https://www.nytimes.com/games/wordle/index.html) game.
+It was written as an exercise.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# File Structure
+Folder layout follows standard React + Vite conventions
+(public/, src/main.jsx, vite.config.js, etc.), so only the src folder (which is unique to this project) is highlighted below.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+src/
+├─ App.css
+├─ App.jsx
+├─ index.css
+├─ main.jsx                 #renders root component
+├─ assets/
+│  └─ react.svg
+├─ components/
+│  ├─ Components.css        #contains style for most of the components
+│  ├─ Header.css            #style for the header
+│  ├─ Header.jsx           
+│  ├─ WordleBlock.jsx
+│  ├─ WordleBoard.jsx       #Contains WordleTextBoxes and handles game logic
+│  └─ WordleTextBox.jsx     #Gets and contains input from user
+└─ data/
+   └─ wordsFiveLetters.txt  #The list of words chosen for the game
