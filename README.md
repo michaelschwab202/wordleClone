@@ -6,13 +6,13 @@ It was written as an exercise.
 Folder layout follows standard React + Vite conventions
 (public/, src/main.jsx, vite.config.js, etc.), so only the src folder (which is unique to this project) is highlighted below.
 
-src/
-├─ App.css
-├─ App.jsx
-├─ index.css
-├─ main.jsx                 #renders root component
-├─ assets/
-│  └─ react.svg
+src/  
+├─ App.css  
+├─ App.jsx  
+├─ index.css  
+├─ main.jsx                 #renders root component  
+├─ assets/  
+│  └─ react.svg  
 ├─ components/
 │  ├─ Components.css        #contains style for most of the components
 │  ├─ Header.css            #style for the header
