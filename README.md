@@ -6,6 +6,7 @@ It was written as an exercise.
 Folder layout follows standard React + Vite conventions
 (public/, src/main.jsx, vite.config.js, etc.), so only the src folder (which is unique to this project) is highlighted below.
 
+```text
 src/  
 ├─ App.css  
 ├─ App.jsx  
@@ -22,3 +23,4 @@ src/
 │  └─ WordleTextBox.jsx     #Gets and contains input from user
 └─ data/
    └─ wordsFiveLetters.txt  #The list of words chosen for the game
+```
